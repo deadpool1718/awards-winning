@@ -2,10 +2,10 @@ import React from "react";
 import { FaDiscord, FaGithub, FaTwitch, FaTwitter } from "react-icons/fa";
 
 const links = [
-  { href: "https:discord.com", icon: <FaDiscord /> },
-  { href: "https:x.com", icon: <FaTwitter /> },
-  { href: "https:github.com", icon: <FaGithub /> },
-  { href: "https:twitch.com", icon: <FaTwitch /> },
+  { href: "https://discord.com", icon: <FaDiscord /> },
+  { href: "https://x.com", icon: <FaTwitter /> },
+  { href: "https://github.com", icon: <FaGithub /> },
+  { href: "https://twitch.com", icon: <FaTwitch /> },
 ];
 
 const Footer = () => {
@@ -17,7 +17,7 @@ const Footer = () => {
         </p>
         <div className="flex justify-center gap-4 md:justify-start">
           {links.map((link) =>(
-            <a href={link.href} key={link} target="_blank" rel="noopener noreferrer" className="text-black transition-colors duration-500 ease-in-out hover:text-white">
+            <a href={link.href} key={link.href} target="_blank" rel="noopener noreferrer" className="text-black transition-colors duration-500 ease-in-out hover:text-white">
               {link.icon}
             </a>
           ))}
