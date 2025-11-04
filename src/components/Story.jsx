@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import AnimatedTitle from "./AnimatedTitle";
 import gsap from "gsap";
 import RoundedCorners from "./RoundCorners";
-import Button from "./Button"
+import Button from "./Button";
 
 const Story = () => {
   const frameRef = useRef("null");
@@ -55,14 +55,14 @@ const Story = () => {
             <div className="story-img-mask">
               <div className="story-img-content">
                 <img
+                  src="img/entrance.webp"
                   ref={frameRef}
-                  onMouseLeave={handleMouseLeave}
+                  alt="entrance"
+                  className="object-contain"
                   onMouseUp={handleMouseLeave}
                   onMouseEnter={handleMouseLeave}
                   onMouseMove={handleMouseMove}
-                  src="/img/entrance.webp"
-                  alt="entrance"
-                  className="object-contain"
+                  onMouseLeave={handleMouseLeave}
                 />
               </div>
             </div>
