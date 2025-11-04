@@ -88,7 +88,7 @@ const NavBar = () => {
               onClick={toggleAudioIndicator}
             >
               <audio
-                src="/audio/loop.mp3"
+                src="audio/loop.mp3"
                 loop
                 ref={audioElementRef}
                 className="hidden"
